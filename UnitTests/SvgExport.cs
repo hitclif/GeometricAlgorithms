@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using SweepLine;
 
 namespace UnitTests
 {
     internal static class SvgExport
     {
-        public static string ToSvg(this IEnumerable<Segment> segments)
+        public static string ToSvg(this IEnumerable<SweepLine.Segment> segments)
         {
             var svg = segments
                 .Select(s => new S
